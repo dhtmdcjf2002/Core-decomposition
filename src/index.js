@@ -76,11 +76,14 @@ function item3() {
    Math.floor ((parseInt(a) * 50) / 35);
   document.getElementById("result9").value =
     parseInt(a) * 50 % 35;
-  }else{
+  }else if(a < 26 && a<1){
     alert('최대 20개까지 입력할 수 있습니다.');
+  }else if('String'){
+    alert('숫자만 입력할 수 있습니다.');
   }
     
 }
+
 
 function createDiv() {
   const newDiv = document.createElement('div');
