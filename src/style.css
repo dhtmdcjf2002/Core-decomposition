@@ -14,7 +14,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   background-image: url('img/배경.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,6 +73,16 @@ h2 {
   border-top: 0;
   margin-left: -20px;
   margin-top: -20px;
+}
+
+.bt {
+    border: none;
+    font-family: 'Light';
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    top:180px;
+    text-align: center;
 }
 
 /* 내가 한거 아님 */
@@ -137,12 +147,15 @@ h2 {
 
 /*ㅇㅇㅇ */
 
-body>footer {
+.ft {
   display: flex;
   justify-content: space-between;
   background-color: #383941;
   color: white;
   padding: 24px 30px;
+  position: relative;
+}
+.ft-item1 {
   font-family: none;
   font-size: 13px;
   line-height: 1.5;
@@ -151,5 +164,8 @@ body>footer {
   display: flex;
   justify-content: space-around;
   width: 150px;
-  margin-top: 15px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(0, -50%);
 }
